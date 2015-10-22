@@ -5,9 +5,9 @@
     font-family: "Slabo 27px", serif;
     color: #1d3174;
     background-image: url('../guessing-game-design-assets/jar@1x.png');
-    background-position: 20% center;
+    background-position: 20% -30%;
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: 25%;
   }
 }
 
@@ -18,7 +18,7 @@
     font-family: "Slabo 27px", serif;
     color: #1d3174;
     background-image: url('../guessing-game-design-assets/jar@1x.png');
-    background-position: 20% center;
+    background-position: 20% -30%;
     background-repeat: no-repeat;
     background-size: 25%;
   }
@@ -31,7 +31,7 @@
     font-family: "Slabo 27px", serif;
     color: #1d3174;
     background-image: url('../guessing-game-design-assets/jar@1x.png');
-    background-position: 20% center;
+    background-position: 20% -30%;
     background-repeat: no-repeat;
     background-size: 30%;
   }
@@ -159,10 +159,30 @@ p {
   margin-right: 10px;
 }
 
+.fail-message {
+  /* Only when a user guesses wrong */
+  font-size: 1em;
+  font-weight: bold;
+  color: #e88d3a;
+  margin-right: 10px;
+}
+
 .lose-message {
   /* Only for losers - what they see when they win */
   font-size: 1em;
   font-weight: bold;
-  color: #e42f2f;
+  color: #red;
   margin-right: 10px;
+}
+
+div #win {
+  display: none;
+}
+
+div #fail {
+  display: none;
+}
+
+div #lose {
+  display: none;
 }
