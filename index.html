@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
           <h1 class="title">Guess how many marbles are in the jar!</h1>
-          <p>P.S. The number is between 1 and 100. </p>
+          <p id="hint">P.S. The number is between 1 and 100. </p>
           <form id="guess-form" class="form-inline">
             <input id="guess-field" type="text" class="form-control guess-box" placeholder="Enter guess here!">
             <div id="guess-button" type="button" class="btn btn-primary">Guess!</button>
@@ -38,15 +38,21 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
           <div id="win" class="announcement clearfix">
-            <span class="win-message pull-left">Cool, you guessed right! There are <span id="number-of-marbles"></span> marbles in the jar. How’d ya figure that out? </span><a class="play-again-button" class="btn btn-success pull-right" href="#" role="button">Play again?</a>
+            <span class="win-message pull-left">Cool, you guessed right! There are <span class="number-of-marbles"></span> marbles in the jar. How’d ya figure that out? </span>
+
+            <a class="play-again-button btn btn-success pull-right" href="#" role="button">Play again?</a>
           </div>
 
           <div id="fail" class="announcement clearfix">
-            <span class="fail-message pull-left">That’s not it. You’re <span id="guess-status"></span>! Try again, you have <span id="number-of-guesses"></span> guesses remaining!</span><a class="btn btn-default pull-right" href="#" role="button">I give up!</a>
+            <span class="fail-message pull-left">That’s not it. You’re <span id="guess-status"></span>! Try again, you have <span id="number-of-guesses"></span> guesses remaining!</span>
+
+            <a class="give-up-button btn btn-default pull-right" href="#" role="button">I give up!</a>
           </div>
 
           <div id="lose" class="announcement clearfix">
-            <span class="lose-message pull-left">You lost! The correct answer was <span class="number-of-marbles"></span>! </span><a class="play-again-button btn btn-info pull-right" href="#" role="button">Play again?</a>
+            <span class="lose-message pull-left">You lost! The correct answer was <span class="number-of-marbles"></span>! </span>
+
+            <a class="play-again-button btn btn-info pull-right" href="#" role="button">Play again?</a>
           </div>
         </div>
       </div>
